@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.171);
+    z-index: 3;
+}
+ nav h1{
+    font-size: 2.5rem;
+    font-family: monospace;
+    text-transform: uppercase;    
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color:  navy;
+}
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    color: navy;
+}
+video{
+    width: 100%;
+}
+
+#hero{
+    height: 100vh;
+    position: relative;
+}
+.dis{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dis h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: cornsilk;
+}
+.dis p{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: cornsilk;
+    padding: 0 10rem;
+}
+#About{
+    height: 100vh;
+    display: flex;
+}
+#About .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#About .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img{
+    width: 60%;
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+}
+
+@media  screen and (max-width:426px) {
+   nav h1{
+    font-size: 1.3rem;
+   }
+   nav .right{
+    display: none;
+   }
+   #hero{
+    height: 100%;
+   }
+   .dis{
+    padding: 5rem 3rem;
+   }
+   #hero h2{
+    font-size: 1.5rem;
+    letter-spacing: normal;
+   }
+   #hero p{
+    font-size: 1rem;
+    padding: 0;
+   }
+   #About{
+    height: 100%;
+    flex-direction: column;
+   }
+   #About .left{
+    width: 100%;
+   }
+   #About .right{
+    width: 100%;
+   }
+   .left img{
+    width: 90%;
+   }
+}
+
